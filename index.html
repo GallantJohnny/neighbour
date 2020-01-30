@@ -1,0 +1,56 @@
+<!DOCTYPE html5>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <link rel="stylesheet" href="style.css">
+        <!--<title> Title </title> -->
+        
+        <nav>
+        </nav>
+        
+    </head>
+
+    <body id="body" class="content-center">
+        
+        <div class="grid-container">
+            <div id="wrongAnswerContainer" class="grid-item-answers">
+                <div class="answer-text">Helytelen válasz:</div>
+                <div id="wrong" class="answer-number">0</div>
+            </div>
+            
+            <div class="grid-item" onclick="onClickChangeNumber()"> 
+                
+                <div id="circle" class="circleMain"> <div id="circleNumber" class="centerText" onclick="onClickChangeNumber()">  </div> </div>
+                
+            </div>
+            
+            <div id="rightAnswerCContainer" class="grid-item-answers">
+                <div class="answer-text">Helyes válasz:</div>
+                <div id="right" class="answer-number">0</div>
+            </div>
+            
+            <div class="grid-item"> 
+                
+                <div id="circleAnswerId1" class="circleAnswer"> <form class="form"><input id="answerOne" type="text" name="numberLess"> </form> </div>
+            
+            </div>
+            
+            <div class="grid-item">
+                
+                <div id="checkBtn" class="button" onclick="checkCircleNumbers()"> Ellenőrzés </div>
+                
+            </div>
+            
+            <div class="grid-item"> 
+                
+                <div id="circleAnswerId2" class="circleAnswer"> <form class="form"><input id="answerTwo" type="text" name="numberLess"> </form> </div>
+                
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+
+</html>
